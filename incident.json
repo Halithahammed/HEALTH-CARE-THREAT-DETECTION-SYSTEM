@@ -1,0 +1,27 @@
+{
+  "incidentCode": "ADM-1787062710620",
+  "user": {
+    "id": 1,
+    "username": "admin",
+    "fullName": "Security Administrator",
+    "role": "admin",
+    "doctorId": null,
+    "department": null
+  },
+  "incident": {
+    "incidentCode": "ADM-1787062710620",
+    "actionType": "CRITICAL_ALERT_IGNORED_3_TIMES",
+    "actionLabel": "Ignored critical security alert three times",
+    "reason": "Administrator failed to acknowledge INC-00103 after three critical alerts.",
+    "riskLevel": "Critical",
+    "riskScore": 95,
+    "totalRiskScore": 95,
+    "originalIncidentCode": "INC-00103",
+    "dismissalCount": 3,
+    "acknowledgementStatus": "Failed",
+    "escalationStatus": "Higher Official",
+    "suppressAdminAlert": true,
+    "timestamp": "2026-08-18T14:18:30.620Z"
+  },
+  "createdAt": "2026-08-18T14:18:31.227Z"
+}

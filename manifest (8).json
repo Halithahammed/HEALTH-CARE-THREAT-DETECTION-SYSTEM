@@ -1,0 +1,36 @@
+{
+  "incidentCode": "INC-00104",
+  "readOnly": true,
+  "evidenceStatus": "Complete",
+  "hasScreenshot": true,
+  "hasRecording": false,
+  "hasReplay": true,
+  "files": [
+    {
+      "name": "screenshot.png",
+      "sha256": "d40201872d47a05d5e8eb91a78c782dfca936da3a1ba625f20988d65f50e30b6",
+      "bytes": 273421
+    },
+    {
+      "name": "page-snapshot.html",
+      "sha256": "9d077aa09a62f721c0d2ddfa42232d1c090f73eb5543bc4a643b07d1cbd1bbfe",
+      "bytes": 22313
+    },
+    {
+      "name": "replay.json",
+      "sha256": "9a8beb87a70941ce209a192e3e07aa901ff6967b6ab3bdd8bd83e4e42f7c2d4c",
+      "bytes": 2659695
+    },
+    {
+      "name": "timeline.json",
+      "sha256": "d54d2d09764cb827166857a1f2bac9a6f5aae7d7410bb00573366278aeb05434",
+      "bytes": 10502
+    },
+    {
+      "name": "incident.json",
+      "sha256": "099af7bbd3c746e7602fd768e634e1658744eb0d2c367cf918c9a97f3667899c",
+      "bytes": 971
+    }
+  ],
+  "createdAt": "2026-08-18T16:12:34.138Z"
+}

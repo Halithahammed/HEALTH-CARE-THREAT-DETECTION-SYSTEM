@@ -1,0 +1,654 @@
+[
+  {
+    "time": 1787062614587,
+    "type": "page",
+    "label": "WeCare | Administration & SOC",
+    "path": "/admin-dashboard.html"
+  },
+  {
+    "time": 1787062614823,
+    "type": "pointer",
+    "x": 628,
+    "y": 316,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062655086,
+    "type": "pointer",
+    "x": 823,
+    "y": 26,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062655179,
+    "type": "pointer",
+    "x": 955,
+    "y": 411,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062655462,
+    "type": "pointer",
+    "x": 959,
+    "y": 437,
+    "cursor": "pointer"
+  },
+  {
+    "time": 1787062655545,
+    "type": "pointer",
+    "x": 945,
+    "y": 440,
+    "cursor": "pointer"
+  },
+  {
+    "time": 1787062655628,
+    "type": "pointer",
+    "x": 935,
+    "y": 439,
+    "cursor": "pointer"
+  },
+  {
+    "time": 1787062655711,
+    "type": "pointer",
+    "x": 932,
+    "y": 435,
+    "cursor": "pointer"
+  },
+  {
+    "time": 1787062657102,
+    "type": "click",
+    "x": 932,
+    "y": 435,
+    "selector": "#singleExportAck",
+    "label": "Acknowledge"
+  },
+  {
+    "time": 1787062658482,
+    "type": "scroll",
+    "x": 0,
+    "y": 330.3999938964844,
+    "label": "Page scroll"
+  },
+  {
+    "time": 1787062658811,
+    "type": "pointer",
+    "x": 915,
+    "y": 431,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062658892,
+    "type": "pointer",
+    "x": 527,
+    "y": 370,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062658975,
+    "type": "pointer",
+    "x": 288,
+    "y": 360,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062659825,
+    "type": "pointer",
+    "x": 340,
+    "y": 371,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062659908,
+    "type": "pointer",
+    "x": 681,
+    "y": 511,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062660196,
+    "type": "pointer",
+    "x": 722,
+    "y": 520,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062660275,
+    "type": "pointer",
+    "x": 756,
+    "y": 364,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062660358,
+    "type": "pointer",
+    "x": 848,
+    "y": 325,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062660441,
+    "type": "pointer",
+    "x": 988,
+    "y": 464,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062660524,
+    "type": "pointer",
+    "x": 908,
+    "y": 594,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062660607,
+    "type": "pointer",
+    "x": 709,
+    "y": 593,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062660690,
+    "type": "pointer",
+    "x": 700,
+    "y": 491,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062660773,
+    "type": "pointer",
+    "x": 832,
+    "y": 342,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062660856,
+    "type": "pointer",
+    "x": 920,
+    "y": 382,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062660940,
+    "type": "pointer",
+    "x": 936,
+    "y": 473,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062661023,
+    "type": "pointer",
+    "x": 775,
+    "y": 541,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062661108,
+    "type": "pointer",
+    "x": 688,
+    "y": 499,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062661190,
+    "type": "pointer",
+    "x": 715,
+    "y": 375,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062661273,
+    "type": "pointer",
+    "x": 789,
+    "y": 322,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062661356,
+    "type": "pointer",
+    "x": 816,
+    "y": 325,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062661439,
+    "type": "pointer",
+    "x": 864,
+    "y": 384,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062661523,
+    "type": "pointer",
+    "x": 880,
+    "y": 416,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062661606,
+    "type": "pointer",
+    "x": 866,
+    "y": 430,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062661690,
+    "type": "pointer",
+    "x": 847,
+    "y": 441,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062666509,
+    "type": "scroll",
+    "x": 0,
+    "y": 0,
+    "label": "Page scroll"
+  },
+  {
+    "time": 1787062667069,
+    "type": "pointer",
+    "x": 834,
+    "y": 418,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062684342,
+    "type": "pointer",
+    "x": 851,
+    "y": 9,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062684435,
+    "type": "pointer",
+    "x": 947,
+    "y": 430,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062684685,
+    "type": "pointer",
+    "x": 947,
+    "y": 434,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062684767,
+    "type": "pointer",
+    "x": 944,
+    "y": 479,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062684851,
+    "type": "pointer",
+    "x": 943,
+    "y": 491,
+    "cursor": "pointer"
+  },
+  {
+    "time": 1787062684935,
+    "type": "pointer",
+    "x": 940,
+    "y": 500,
+    "cursor": "pointer"
+  },
+  {
+    "time": 1787062685042,
+    "type": "pointer",
+    "x": 940,
+    "y": 499,
+    "cursor": "pointer"
+  },
+  {
+    "time": 1787062685134,
+    "type": "pointer",
+    "x": 978,
+    "y": 311,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062685217,
+    "type": "pointer",
+    "x": 1016,
+    "y": 187,
+    "cursor": "pointer"
+  },
+  {
+    "time": 1787062685301,
+    "type": "pointer",
+    "x": 1028,
+    "y": 168,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062685434,
+    "type": "pointer",
+    "x": 1031,
+    "y": 166,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062685517,
+    "type": "pointer",
+    "x": 1008,
+    "y": 188,
+    "cursor": "pointer"
+  },
+  {
+    "time": 1787062685684,
+    "type": "pointer",
+    "x": 1004,
+    "y": 189,
+    "cursor": "pointer"
+  },
+  {
+    "time": 1787062685975,
+    "type": "pointer",
+    "x": 1004,
+    "y": 188,
+    "cursor": "pointer"
+  },
+  {
+    "time": 1787062686136,
+    "type": "pointer",
+    "x": 1006,
+    "y": 182,
+    "cursor": "pointer"
+  },
+  {
+    "time": 1787062686584,
+    "type": "click",
+    "x": 1006,
+    "y": 181,
+    "selector": "#criticalAlertClose",
+    "label": "×"
+  },
+  {
+    "time": 1787062687632,
+    "type": "pointer",
+    "x": 992,
+    "y": 194,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062688187,
+    "type": "scroll",
+    "x": 0,
+    "y": 330.3999938964844,
+    "label": "Page scroll"
+  },
+  {
+    "time": 1787062689236,
+    "type": "scroll",
+    "x": 0,
+    "y": 36.79999923706055,
+    "label": "Page scroll"
+  },
+  {
+    "time": 1787062689422,
+    "type": "scroll",
+    "x": 0,
+    "y": 34.400001525878906,
+    "label": "Page scroll"
+  },
+  {
+    "time": 1787062689539,
+    "type": "pointer",
+    "x": 820,
+    "y": 331,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062692700,
+    "type": "pointer",
+    "x": 1402,
+    "y": 149,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062692794,
+    "type": "pointer",
+    "x": 1417,
+    "y": 135,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062692878,
+    "type": "pointer",
+    "x": 1425,
+    "y": 129,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062692960,
+    "type": "pointer",
+    "x": 1430,
+    "y": 135,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062694147,
+    "type": "pointer",
+    "x": 1343,
+    "y": 164,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062694284,
+    "type": "pointer",
+    "x": 1329,
+    "y": 164,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062694375,
+    "type": "pointer",
+    "x": 1135,
+    "y": 151,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062694459,
+    "type": "pointer",
+    "x": 1092,
+    "y": 150,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062694542,
+    "type": "pointer",
+    "x": 1076,
+    "y": 150,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062694626,
+    "type": "pointer",
+    "x": 1060,
+    "y": 158,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062694708,
+    "type": "pointer",
+    "x": 1031,
+    "y": 172,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062694791,
+    "type": "pointer",
+    "x": 1016,
+    "y": 172,
+    "cursor": "pointer"
+  },
+  {
+    "time": 1787062694874,
+    "type": "pointer",
+    "x": 1013,
+    "y": 172,
+    "cursor": "pointer"
+  },
+  {
+    "time": 1787062694958,
+    "type": "pointer",
+    "x": 1010,
+    "y": 172,
+    "cursor": "pointer"
+  },
+  {
+    "time": 1787062695400,
+    "type": "click",
+    "x": 1009,
+    "y": 172,
+    "selector": "#criticalAlertClose",
+    "label": "×"
+  },
+  {
+    "time": 1787062695553,
+    "type": "pointer",
+    "x": 1012,
+    "y": 199,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062695642,
+    "type": "pointer",
+    "x": 1068,
+    "y": 572,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062695858,
+    "type": "pointer",
+    "x": 1068,
+    "y": 592,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062696728,
+    "type": "pointer",
+    "x": 508,
+    "y": 131,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062696999,
+    "type": "pointer",
+    "x": 490,
+    "y": 99,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062697995,
+    "type": "pointer",
+    "x": 553,
+    "y": 191,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062698234,
+    "type": "pointer",
+    "x": 532,
+    "y": 199,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062699725,
+    "type": "pointer",
+    "x": 1068,
+    "y": 623,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062702166,
+    "type": "pointer",
+    "x": 1032,
+    "y": 92,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062708871,
+    "type": "pointer",
+    "x": 931,
+    "y": 35,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062708965,
+    "type": "pointer",
+    "x": 992,
+    "y": 345,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062709218,
+    "type": "pointer",
+    "x": 991,
+    "y": 346,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062709312,
+    "type": "pointer",
+    "x": 1010,
+    "y": 217,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062709395,
+    "type": "pointer",
+    "x": 1016,
+    "y": 195,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062709477,
+    "type": "pointer",
+    "x": 1016,
+    "y": 164,
+    "cursor": "pointer"
+  },
+  {
+    "time": 1787062709578,
+    "type": "pointer",
+    "x": 1016,
+    "y": 150,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062709663,
+    "type": "pointer",
+    "x": 1012,
+    "y": 153,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062709745,
+    "type": "pointer",
+    "x": 1008,
+    "y": 174,
+    "cursor": "pointer"
+  },
+  {
+    "time": 1787062709828,
+    "type": "pointer",
+    "x": 1008,
+    "y": 183,
+    "cursor": "pointer"
+  },
+  {
+    "time": 1787062710274,
+    "type": "click",
+    "x": 1008,
+    "y": 183,
+    "selector": "#criticalAlertClose",
+    "label": "×"
+  },
+  {
+    "time": 1787062710626,
+    "type": "security",
+    "label": "Ignored critical security alert three times"
+  }
+]

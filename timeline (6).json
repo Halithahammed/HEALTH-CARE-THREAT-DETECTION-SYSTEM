@@ -1,0 +1,1018 @@
+[
+  {
+    "time": 1787062623823,
+    "type": "page",
+    "label": "WeCare | Doctor Dashboard",
+    "path": "/doctor-dashboard.html"
+  },
+  {
+    "time": 1787062625573,
+    "type": "pointer",
+    "x": 945,
+    "y": 209,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062626026,
+    "type": "pointer",
+    "x": 939,
+    "y": 187,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062627660,
+    "type": "pointer",
+    "x": 648,
+    "y": 29,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062627757,
+    "type": "pointer",
+    "x": 686,
+    "y": 175,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062628225,
+    "type": "scroll",
+    "x": 0,
+    "y": 284,
+    "label": "Page scroll"
+  },
+  {
+    "time": 1787062628460,
+    "type": "pointer",
+    "x": 652,
+    "y": 183,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062628555,
+    "type": "pointer",
+    "x": 280,
+    "y": 112,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062628637,
+    "type": "pointer",
+    "x": 218,
+    "y": 74,
+    "cursor": "pointer"
+  },
+  {
+    "time": 1787062628720,
+    "type": "pointer",
+    "x": 204,
+    "y": 55,
+    "cursor": "pointer"
+  },
+  {
+    "time": 1787062628803,
+    "type": "pointer",
+    "x": 178,
+    "y": 98,
+    "cursor": "pointer"
+  },
+  {
+    "time": 1787062628887,
+    "type": "pointer",
+    "x": 168,
+    "y": 119,
+    "cursor": "pointer"
+  },
+  {
+    "time": 1787062628970,
+    "type": "pointer",
+    "x": 165,
+    "y": 125,
+    "cursor": "pointer"
+  },
+  {
+    "time": 1787062629065,
+    "type": "pointer",
+    "x": 164,
+    "y": 132,
+    "cursor": "pointer"
+  },
+  {
+    "time": 1787062629207,
+    "type": "pointer",
+    "x": 164,
+    "y": 133,
+    "cursor": "pointer"
+  },
+  {
+    "time": 1787062629680,
+    "type": "click",
+    "x": 164,
+    "y": 133,
+    "selector": "main.workspace > aside.sidebar > button.nav-link",
+    "label": "Laboratory Reports"
+  },
+  {
+    "time": 1787062629805,
+    "type": "pointer",
+    "x": 163,
+    "y": 134,
+    "cursor": "pointer"
+  },
+  {
+    "time": 1787062629886,
+    "type": "pointer",
+    "x": 137,
+    "y": 170,
+    "cursor": "pointer"
+  },
+  {
+    "time": 1787062629969,
+    "type": "pointer",
+    "x": 129,
+    "y": 181,
+    "cursor": "pointer"
+  },
+  {
+    "time": 1787062630455,
+    "type": "click",
+    "x": 128,
+    "y": 183,
+    "selector": "main.workspace > aside.sidebar > button.nav-link",
+    "label": "Scan Reports"
+  },
+  {
+    "time": 1787062630636,
+    "type": "pointer",
+    "x": 126,
+    "y": 187,
+    "cursor": "pointer"
+  },
+  {
+    "time": 1787062631042,
+    "type": "pointer",
+    "x": 140,
+    "y": 191,
+    "cursor": "pointer"
+  },
+  {
+    "time": 1787062631135,
+    "type": "pointer",
+    "x": 547,
+    "y": 155,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062631436,
+    "type": "pointer",
+    "x": 573,
+    "y": 150,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062631517,
+    "type": "pointer",
+    "x": 512,
+    "y": 165,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062631601,
+    "type": "pointer",
+    "x": 490,
+    "y": 163,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062631685,
+    "type": "pointer",
+    "x": 483,
+    "y": 160,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062632119,
+    "type": "click",
+    "x": 483,
+    "y": 160,
+    "selector": "div.table-wrap > table > tbody > tr",
+    "label": "CT BrainYasiv M. Patel25B+2026-08-17Stable findings"
+  },
+  {
+    "time": 1787062632529,
+    "type": "pointer",
+    "x": 475,
+    "y": 166,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062632618,
+    "type": "pointer",
+    "x": 393,
+    "y": 222,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062632701,
+    "type": "pointer",
+    "x": 360,
+    "y": 236,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062632784,
+    "type": "pointer",
+    "x": 357,
+    "y": 236,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062633566,
+    "type": "click",
+    "x": 357,
+    "y": 236,
+    "selector": "div > article.panel.clean-clinical > div.row-menu > button",
+    "label": "View"
+  },
+  {
+    "time": 1787062634111,
+    "type": "pointer",
+    "x": 382,
+    "y": 237,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062634198,
+    "type": "pointer",
+    "x": 768,
+    "y": 361,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062635331,
+    "type": "pointer",
+    "x": 856,
+    "y": 346,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062635414,
+    "type": "pointer",
+    "x": 1254,
+    "y": 171,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062635672,
+    "type": "pointer",
+    "x": 1316,
+    "y": 139,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062635764,
+    "type": "pointer",
+    "x": 1283,
+    "y": 55,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062635929,
+    "type": "pointer",
+    "x": 1259,
+    "y": 41,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062636014,
+    "type": "pointer",
+    "x": 1258,
+    "y": 47,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062636096,
+    "type": "pointer",
+    "x": 1244,
+    "y": 56,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062636180,
+    "type": "pointer",
+    "x": 1233,
+    "y": 62,
+    "cursor": "pointer"
+  },
+  {
+    "time": 1787062636724,
+    "type": "click",
+    "x": 1231,
+    "y": 63,
+    "selector": "#closeReportViewer",
+    "label": "×"
+  },
+  {
+    "time": 1787062637055,
+    "type": "pointer",
+    "x": 1206,
+    "y": 67,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062637146,
+    "type": "pointer",
+    "x": 727,
+    "y": 195,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062637618,
+    "type": "scroll",
+    "x": 0,
+    "y": 138.39999389648438,
+    "label": "Page scroll"
+  },
+  {
+    "time": 1787062637795,
+    "type": "pointer",
+    "x": 637,
+    "y": 223,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062637879,
+    "type": "pointer",
+    "x": 396,
+    "y": 295,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062637962,
+    "type": "pointer",
+    "x": 361,
+    "y": 298,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062638049,
+    "type": "pointer",
+    "x": 354,
+    "y": 299,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062638918,
+    "type": "click",
+    "x": 353,
+    "y": 299,
+    "selector": "div.table-wrap > table > tbody > tr",
+    "label": "CT BrainYasiv M. Patel25B+2026-08-17Stable findings"
+  },
+  {
+    "time": 1787062639393,
+    "type": "pointer",
+    "x": 352,
+    "y": 310,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062639477,
+    "type": "pointer",
+    "x": 344,
+    "y": 383,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062639561,
+    "type": "pointer",
+    "x": 350,
+    "y": 400,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062639644,
+    "type": "pointer",
+    "x": 351,
+    "y": 424,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062639727,
+    "type": "pointer",
+    "x": 349,
+    "y": 435,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062640203,
+    "type": "pointer",
+    "x": 349,
+    "y": 433,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062640309,
+    "type": "pointer",
+    "x": 354,
+    "y": 420,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062640797,
+    "type": "click",
+    "x": 354,
+    "y": 419,
+    "selector": "div > article.panel.clean-clinical > div.row-menu > button",
+    "label": "Select"
+  },
+  {
+    "time": 1787062641270,
+    "type": "pointer",
+    "x": 358,
+    "y": 406,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062641359,
+    "type": "pointer",
+    "x": 410,
+    "y": 319,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062641441,
+    "type": "pointer",
+    "x": 461,
+    "y": 284,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062641525,
+    "type": "pointer",
+    "x": 582,
+    "y": 295,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062641859,
+    "type": "pointer",
+    "x": 624,
+    "y": 297,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062641941,
+    "type": "pointer",
+    "x": 945,
+    "y": 173,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062642024,
+    "type": "pointer",
+    "x": 1073,
+    "y": 150,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062642260,
+    "type": "pointer",
+    "x": 1097,
+    "y": 149,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062642340,
+    "type": "pointer",
+    "x": 1382,
+    "y": 160,
+    "cursor": "pointer"
+  },
+  {
+    "time": 1787062642427,
+    "type": "pointer",
+    "x": 1409,
+    "y": 171,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062642525,
+    "type": "pointer",
+    "x": 1409,
+    "y": 172,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062642607,
+    "type": "pointer",
+    "x": 1407,
+    "y": 173,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062642691,
+    "type": "pointer",
+    "x": 1326,
+    "y": 167,
+    "cursor": "pointer"
+  },
+  {
+    "time": 1787062643149,
+    "type": "click",
+    "x": 1321,
+    "y": 164,
+    "selector": "#exportRows",
+    "label": "Export"
+  },
+  {
+    "time": 1787062646141,
+    "type": "pointer",
+    "x": 1306,
+    "y": 179,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062646224,
+    "type": "pointer",
+    "x": 1066,
+    "y": 454,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062646320,
+    "type": "pointer",
+    "x": 1033,
+    "y": 554,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062646573,
+    "type": "pointer",
+    "x": 1030,
+    "y": 570,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062647712,
+    "type": "pointer",
+    "x": 848,
+    "y": 692,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062647804,
+    "type": "pointer",
+    "x": 952,
+    "y": 595,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062647886,
+    "type": "pointer",
+    "x": 1033,
+    "y": 591,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062647969,
+    "type": "pointer",
+    "x": 1076,
+    "y": 603,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062648053,
+    "type": "pointer",
+    "x": 1101,
+    "y": 611,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062648136,
+    "type": "pointer",
+    "x": 1112,
+    "y": 619,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062648220,
+    "type": "pointer",
+    "x": 1123,
+    "y": 632,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062648302,
+    "type": "pointer",
+    "x": 1128,
+    "y": 641,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062648385,
+    "type": "pointer",
+    "x": 1066,
+    "y": 615,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062648468,
+    "type": "pointer",
+    "x": 984,
+    "y": 547,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062648551,
+    "type": "pointer",
+    "x": 905,
+    "y": 527,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062648631,
+    "type": "pointer",
+    "x": 902,
+    "y": 527,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062648718,
+    "type": "pointer",
+    "x": 976,
+    "y": 583,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062648802,
+    "type": "pointer",
+    "x": 1004,
+    "y": 595,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062648885,
+    "type": "pointer",
+    "x": 996,
+    "y": 591,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062648968,
+    "type": "pointer",
+    "x": 836,
+    "y": 427,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062649051,
+    "type": "pointer",
+    "x": 723,
+    "y": 212,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062649418,
+    "type": "pointer",
+    "x": 731,
+    "y": 170,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062649500,
+    "type": "pointer",
+    "x": 686,
+    "y": 153,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062649584,
+    "type": "pointer",
+    "x": 667,
+    "y": 230,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062649667,
+    "type": "pointer",
+    "x": 649,
+    "y": 368,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062649751,
+    "type": "pointer",
+    "x": 624,
+    "y": 403,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062649980,
+    "type": "pointer",
+    "x": 614,
+    "y": 404,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062650067,
+    "type": "pointer",
+    "x": 584,
+    "y": 438,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062650150,
+    "type": "pointer",
+    "x": 575,
+    "y": 447,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062650250,
+    "type": "pointer",
+    "x": 572,
+    "y": 446,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062650333,
+    "type": "pointer",
+    "x": 580,
+    "y": 423,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062650419,
+    "type": "pointer",
+    "x": 584,
+    "y": 413,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062650501,
+    "type": "pointer",
+    "x": 592,
+    "y": 407,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062650583,
+    "type": "pointer",
+    "x": 608,
+    "y": 403,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062650667,
+    "type": "pointer",
+    "x": 617,
+    "y": 400,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062650750,
+    "type": "pointer",
+    "x": 626,
+    "y": 399,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062650850,
+    "type": "pointer",
+    "x": 631,
+    "y": 399,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062650933,
+    "type": "pointer",
+    "x": 634,
+    "y": 397,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062651060,
+    "type": "pointer",
+    "x": 639,
+    "y": 393,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062651473,
+    "type": "click",
+    "x": 639,
+    "y": 392,
+    "selector": "div.export-auth-modal > div.export-reasons > label.export-reason-row > input",
+    "label": ""
+  },
+  {
+    "time": 1787062651474,
+    "type": "change",
+    "selector": "div.export-auth-modal > div.export-reasons > label.export-reason-row > input",
+    "label": "exportReason"
+  },
+  {
+    "time": 1787062651658,
+    "type": "pointer",
+    "x": 636,
+    "y": 394,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062651749,
+    "type": "pointer",
+    "x": 588,
+    "y": 423,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062651836,
+    "type": "pointer",
+    "x": 582,
+    "y": 427,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062651932,
+    "type": "pointer",
+    "x": 581,
+    "y": 431,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062652015,
+    "type": "pointer",
+    "x": 616,
+    "y": 439,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062652099,
+    "type": "pointer",
+    "x": 630,
+    "y": 443,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062652182,
+    "type": "pointer",
+    "x": 633,
+    "y": 447,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062652641,
+    "type": "click",
+    "x": 633,
+    "y": 449,
+    "selector": "#confirmSingleExport",
+    "label": "Confirm Export"
+  },
+  {
+    "time": 1787062653385,
+    "type": "pointer",
+    "x": 632,
+    "y": 429,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062653466,
+    "type": "pointer",
+    "x": 612,
+    "y": 8,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062668438,
+    "type": "pointer",
+    "x": 572,
+    "y": 11,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062668533,
+    "type": "pointer",
+    "x": 322,
+    "y": 243,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062668616,
+    "type": "pointer",
+    "x": 280,
+    "y": 232,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062668700,
+    "type": "pointer",
+    "x": 268,
+    "y": 189,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062668783,
+    "type": "pointer",
+    "x": 267,
+    "y": 188,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062668867,
+    "type": "pointer",
+    "x": 296,
+    "y": 183,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062668983,
+    "type": "pointer",
+    "x": 302,
+    "y": 178,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062669071,
+    "type": "pointer",
+    "x": 307,
+    "y": 175,
+    "cursor": "pointer"
+  },
+  {
+    "time": 1787062669166,
+    "type": "pointer",
+    "x": 308,
+    "y": 172,
+    "cursor": "pointer"
+  },
+  {
+    "time": 1787062669594,
+    "type": "click",
+    "x": 309,
+    "y": 171,
+    "selector": "#masterSelect",
+    "label": ""
+  },
+  {
+    "time": 1787062669872,
+    "type": "pointer",
+    "x": 336,
+    "y": 167,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062669965,
+    "type": "pointer",
+    "x": 1091,
+    "y": 215,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062670288,
+    "type": "pointer",
+    "x": 1304,
+    "y": 183,
+    "cursor": "default"
+  },
+  {
+    "time": 1787062670382,
+    "type": "pointer",
+    "x": 1358,
+    "y": 181,
+    "cursor": "pointer"
+  },
+  {
+    "time": 1787062670497,
+    "type": "pointer",
+    "x": 1365,
+    "y": 181,
+    "cursor": "pointer"
+  },
+  {
+    "time": 1787062670594,
+    "type": "pointer",
+    "x": 1364,
+    "y": 181,
+    "cursor": "pointer"
+  },
+  {
+    "time": 1787062670714,
+    "type": "pointer",
+    "x": 1359,
+    "y": 181,
+    "cursor": "pointer"
+  },
+  {
+    "time": 1787062671136,
+    "type": "click",
+    "x": 1359,
+    "y": 181,
+    "selector": "#exportRows",
+    "label": "Export"
+  },
+  {
+    "time": 1787062671164,
+    "type": "security",
+    "label": "Bulk patient data export"
+  }
+]

@@ -1,0 +1,149 @@
+<!doctype html><html lang="en"><head><base href="http://localhost/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WeCare | Administration &amp; SOC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/admin.css">
+  <link rel="stylesheet" href="/css/phase15.css">
+</head>
+<body>
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <div class="brand-name">WeCare</div>
+      <div class="brand-subtitle">WeCare</div>
+    </div>
+    <nav class="nav" aria-label="Administration modules">
+      <button class="nav-item active" data-page="overview" fdprocessedid="hxjll3">Dashboard</button>
+      <button class="nav-item" data-page="doctors" fdprocessedid="05yywe">Doctors</button>
+      <button class="nav-item" data-page="patients" fdprocessedid="zanuti">Patients</button>
+      <button class="nav-item" data-page="reception" fdprocessedid="yruvh9">Reception</button>
+      <button class="nav-item" data-page="appointments" fdprocessedid="d3cu6">Appointments</button>
+      <button class="nav-item" data-page="laboratory" fdprocessedid="ozo62i">Laboratory</button>
+      <button class="nav-item" data-page="pharmacy" fdprocessedid="hjlt5n">Pharmacy</button>
+      <button class="nav-item" data-page="records" fdprocessedid="jd6sy">Medical Records</button>
+      <div class="nav-label">Security operations</div>
+      <button class="nav-item" data-page="soc" fdprocessedid="om34g">AI Security Operations Center</button>
+      <button class="nav-item" data-page="threats" fdprocessedid="q4phep">Threat Monitoring</button>
+      <button class="nav-item" data-page="communication" fdprocessedid="f8p807">Security Notices</button>
+      <button class="nav-item" data-page="reports" fdprocessedid="50k1wo">Reports</button>
+      <button class="nav-item" data-page="settings" fdprocessedid="ijzbxq">Settings</button>
+    </nav>
+    <div class="sidebar-footer">
+      <div class="sidebar-user">Rajesh Kumar</div>
+      <div class="sidebar-role">Hospital Administrator</div>
+      <button id="logoutButton" class="logout-btn" fdprocessedid="kt8io">Logout</button>
+    </div>
+  </aside>
+
+  <div class="app-shell">
+    <header class="topbar">
+      <div>
+        <button class="menu-button" id="menuButton" aria-label="Open navigation">Menu</button>
+        <div class="eyebrow">WeCare · Autonomous Insider Threat Hunter</div>
+        <h1 id="pageTitle">Administration Dashboard</h1>
+      </div>
+      <div class="topbar-meta">
+        <div><span class="meta-label">System status</span><strong class="status-normal">Operational</strong></div>
+        <div><span class="meta-label">Last updated</span><strong id="currentTime">18 Aug 2026, 7:48 pm</strong></div>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="page active" id="page-overview">
+        <div class="intro-row">
+          <div><h2>Hospital overview</h2><p>Operational and security activity across the medical center.</p></div>
+          <div class="actions"><button class="button secondary" data-action="export" fdprocessedid="dfdyaa">Export</button><button class="button" data-action="report" fdprocessedid="4jhwxw">Generate report</button></div>
+        </div>
+
+        <div class="metric-grid">
+          <article class="metric-card"><div class="metric-label">Active doctors</div><div class="metric-value">54</div><div class="metric-note">48 currently available</div></article>
+          <article class="metric-card"><div class="metric-label">Registered patients</div><div class="metric-value">1,842</div><div class="metric-note">31 admitted today</div></article>
+          <article class="metric-card"><div class="metric-label">Appointments today</div><div class="metric-value">127</div><div class="metric-note">91 completed</div></article>
+          <article class="metric-card"><div class="metric-label">Pending reports</div><div class="metric-value">18</div><div class="metric-note">6 marked urgent</div></article>
+          <article class="metric-card"><div class="metric-label">Cases under review</div><div class="metric-value" id="verificationMetric">0</div><div class="metric-note">Administrator-controlled workflow</div></article>
+          <article class="metric-card"><div class="metric-label">Open incidents</div><div class="metric-value">3</div><div class="metric-note">1 requires review</div></article>
+        </div>
+
+        <div class="dashboard-grid">
+          <article class="panel span-2">
+            <div class="panel-heading"><div><h3>Behavior Risk Distribution</h3><p>Activity volume compared with the current risk score.</p></div></div>
+            <div class="scatter-wrap dashboard-scatter"><canvas id="dashboardBehaviorScatter" height="325" aria-label="Behavior risk distribution scatter plot" width="937" style="height: 260px;"></canvas><div id="dashboardScatterTooltip" class="scatter-tooltip" hidden=""></div></div>
+          </article>
+          <article class="panel">
+            <div class="panel-heading"><div><h3>Risk distribution</h3><p>Current classified sessions.</p></div></div>
+            <div class="risk-list">
+              <div><span>Low</span><strong>143</strong><div class="bar"><i style="width:84%"></i></div></div>
+              <div><span>Medium</span><strong>19</strong><div class="bar"><i style="width:38%"></i></div></div>
+              <div><span>High</span><strong>6</strong><div class="bar"><i style="width:18%"></i></div></div>
+              <div><span>Critical</span><strong>1</strong><div class="bar"><i style="width:7%"></i></div></div>
+            </div>
+          </article>
+        </div>
+
+        <article class="panel">
+          <div class="panel-heading"><div><h3>Recent security decisions</h3><p>ML classification, administrator investigation, and automatic containment.</p></div><button class="text-button" data-go="verification" fdprocessedid="gyebdn">View verification queue</button></div>
+          <div class="table-wrap"><table><thead><tr><th>User</th><th>Department</th><th>Detection</th><th>Risk</th><th>Confidence</th><th>Decision</th><th>Status</th></tr></thead><tbody id="overviewSecurityRows"><tr><td>Dr. Arjun Kumar</td><td>General Medicine</td><td>Suspicious login</td><td><span class="badge high">High</span></td><td>94%</td><td>Administrator review</td><td>Waiting</td></tr><tr><td>Dr. Priya</td><td>Cardiology</td><td>Impossible travel</td><td><span class="badge critical">Critical</span></td><td>98%</td><td>Immediate block</td><td>Completed</td></tr><tr><td>Dr. Rahul</td><td>Orthopedics</td><td>Credential anomaly</td><td><span class="badge medium">Medium</span></td><td>86%</td><td>Step-up verification</td><td>Approved</td></tr><tr><td>Dr. Meena</td><td>Radiology</td><td>Normal behavior</td><td><span class="badge low">Low</span></td><td>99%</td><td>Allow</td><td>Normal</td></tr></tbody></table></div>
+        </article>
+      </section>
+
+      <section class="page" id="page-soc"></section>
+
+      <section class="page" id="page-verification"><div class="intro-row"><div><h2>Administrator Investigation Queue</h2><p>High-risk and critical users cannot verify themselves. Only authorized administrators may restore access.</p></div></div><div class="notice"><strong>Containment policy:</strong> Critical bulk export, cross-department harvesting, or highly anomalous access immediately blocks the operation, terminates the session, restricts the account, and creates a report.</div><article class="panel"><div class="table-wrap"><table><thead><tr><th>Subject</th><th>Trigger</th><th>Risk</th><th>Containment</th><th>Decision owner</th></tr></thead><tbody><tr><td>Dr. Sanjay Kumar</td><td>Export All + cross-department access</td><td><span class="badge critical">Critical</span></td><td>Export blocked; session terminated</td><td>Security Administrator</td></tr><tr><td>Dr. Meena Ravi</td><td>Unusual record volume</td><td><span class="badge high">High</span></td><td>Sensitive access restricted</td><td>Security Administrator</td></tr></tbody></table></div></article></section>
+
+      <section class="page" id="page-threats"><div class="intro-row"><div><h2>Threat Monitoring</h2></div></div>
+      <article class="panel threat-profile-panel"><div class="panel-heading"><div><h3>Profile</h3></div></div>
+        <div class="threat-doctor-grid"><button type="button" class="threat-doctor-card active" data-threat-doctor="arjun-export"><strong>Dr. Arjun Kumar</strong><span>Critical</span><small>Bulk export attempt blocked</small></button><button type="button" class="threat-doctor-card " data-threat-doctor="rahul-access"><strong>Dr. Rahul Nair</strong><span>High</span><small>After-hours access from an unfamiliar device</small></button><button type="button" class="threat-doctor-card " data-threat-doctor="priya-credential"><strong>Dr. Priya Sharma</strong><span>Critical</span><small>Credential anomaly and repeated failed authentication</small></button><button type="button" class="threat-doctor-card " data-threat-doctor="meera-normal"><strong>Dr. Meera Joseph</strong><span>Low</span><small>Normal access pattern</small></button></div>
+      </article>
+      <article class="panel" id="selectedDoctorThreat"><div class="selected-threat-head"><div><strong>Dr. Arjun Kumar</strong><span>Critical · Bulk export attempt blocked</span></div><button type="button" class="button secondary" id="downloadThreatReport">Download</button></div><div class="threat-time-template"><div class="threat-time-node"><div class="threat-time-label">09:58 AM</div><div class="threat-time-dot"></div><div class="threat-time-line"></div><strong>Login</strong><span>Signed in from Cardiology workstation</span><small>Allowed</small></div><div class="threat-time-node"><div class="threat-time-label">10:11 AM</div><div class="threat-time-dot"></div><div class="threat-time-line"></div><strong>Patient reports</strong><span>Opened a large set of patient reports</span><small>Observed</small></div><div class="threat-time-node"><div class="threat-time-label">10:26 AM</div><div class="threat-time-dot"></div><div class="threat-time-line"></div><strong>Selection</strong><span>Selected records across reports and scans</span><small>High</small></div><div class="threat-time-node"><div class="threat-time-label">10:32 AM</div><div class="threat-time-dot"></div><div class="threat-time-line"></div><strong>Export</strong><span>Bulk export requested</span><small>Blocked</small></div><div class="threat-time-node"><div class="threat-time-label">10:32 AM</div><div class="threat-time-dot"></div><div class="threat-time-line"></div><strong>Security</strong><span>Critical incident created and evidence capture triggered</span><small>Critical</small></div></div></article></section>
+
+      <section class="page" id="page-predictions">
+        <div class="intro-row"><div><h2>ML prediction</h2><p>Explainable risk classifications produced from login and behavior signals.</p></div><button class="button">Run demonstration</button></div>
+        <div class="metric-grid four"><article class="metric-card"><div class="metric-label">Predictions today</div><div class="metric-value">169</div></article><article class="metric-card"><div class="metric-label">High confidence</div><div class="metric-value">93%</div></article><article class="metric-card"><div class="metric-label">Escalated</div><div class="metric-value">8</div></article><article class="metric-card"><div class="metric-label">Automatically resolved</div><div class="metric-value">6</div></article></div>
+        <article class="panel"><div class="table-wrap"><table><thead><tr><th>User</th><th>Prediction</th><th>Confidence</th><th>Contributing factors</th><th>Response</th></tr></thead><tbody><tr><td>Dr. Arjuna</td><td>Suspicious login</td><td>94%</td><td>New device, unusual location, after-hours pattern</td><td>Administrator review</td></tr><tr><td>Dr. Priya</td><td>Impossible travel</td><td>98%</td><td>Location velocity, concurrent session</td><td>Immediate block</td></tr><tr><td>Dr. Rahul</td><td>Credential anomaly</td><td>86%</td><td>Failed logins, unfamiliar browser</td><td>Administrator review</td></tr><tr><td>Dr. Meena</td><td>Normal behavior</td><td>99%</td><td>Trusted device, expected time and location</td><td>Allow</td></tr></tbody></table></div></article>
+      </section>
+
+      <section class="page" id="page-mitigation">
+        <div class="intro-row"><div><h2>Security actions</h2><p>Live alerts and audit actions for suspicious activity.</p></div></div>
+        <article class="panel"><div class="panel-heading"><div><h3>Mitigation history</h3><p>Recorded security actions.</p></div></div><div class="table-wrap"><table><thead><tr><th>Time</th><th>User</th><th>Trigger</th><th>Automatic action</th><th>Outcome</th></tr></thead><tbody id="mitigationRows"><tr><td>07:47 pm</td><td>Dr. Arjun Kumar</td><td>Investigation review window</td><td>Terminate session, restrict device, create incident</td><td>Completed</td></tr><tr><td>07:47 pm</td><td>Dr. Kavitha</td><td>Investigation review window</td><td>Terminate session, restrict device, create incident</td><td>Completed</td></tr><tr><td>09:48 AM</td><td>Dr. Priya</td><td>Impossible travel</td><td>Terminate session, restrict device, create incident</td><td>Completed</td></tr><tr><td>08:32 AM</td><td>Dr. Rahul</td><td>Repeated failed authentication</td><td>Restrict and open administrator investigation</td><td>Approved</td></tr><tr><td>Yesterday</td><td>Dr. Naveen</td><td>Untrusted device</td><td>Restrict sensitive access until verified</td><td>Completed</td></tr></tbody></table></div></article>
+      </section>
+
+      <section class="page" id="page-communication">
+    <div class="intro-row"><div><h2>Secure Communication Center</h2><p>Send security notices and hospital messages. Suspected insiders cannot approve or clear their own incidents.</p></div><button class="button" id="refreshComms">Refresh</button></div>
+    <div class="dashboard-grid"><article class="panel"><h3>Send message to doctor</h3><div class="settings-form">
+      <div class="field"><label>Doctor ID</label><input id="commDoctorId" value="[masked]" placeholder="DOC001"></div>
+      <div class="field"><label>Category</label><select id="commCategory"><option>Security Notice</option><option>Account Restriction</option><option>Hospital Announcement</option><option>Investigation Update</option><option>Maintenance</option></select></div>
+      <div class="field"><label>Priority</label><select id="commPriority"><option>Normal</option><option>High</option><option>Critical</option></select></div>
+      <div class="field"><label>Subject</label><input id="commSubject" value="[masked]"></div>
+      <div class="field full"><label>Message</label><textarea id="commBody" rows="5" value="[masked]">[masked]</textarea></div>
+      <button class="button" id="sendDoctorMessage">Send live popup</button>
+    </div></article><article class="panel"><h3>Communication policy</h3><div class="notice"><strong>No mobile approval:</strong> all mobile verification controls have been removed.</div><p>Doctors can receive notices, acknowledge messages, and submit support requests. They cannot approve high-risk activity, remove restrictions, restore sessions, or close incidents.</p><dl class="detail-list"><div><dt>Low-risk notice</dt><dd>Doctor may acknowledge</dd></div><div><dt>High/Critical incident</dt><dd>Admin-only decision</dd></div><div><dt>Insider containment</dt><dd>Immediate termination and evidence preservation</dd></div></dl></article></div>
+    <article class="panel"><div class="panel-heading"><div><h3>Message history</h3><p>Read status and audit-linked communications.</p></div></div><div class="table-wrap"><table><thead><tr><th>Time</th><th>From</th><th>To</th><th>Category</th><th>Subject</th><th>Priority</th><th>Status</th></tr></thead><tbody id="commRows"><tr><td colspan="7">No messages yet.</td></tr></tbody></table></div></article></section><section class="page" id="page-doctors"></section><section class="page" id="page-patients"></section><section class="page" id="page-reception"></section><section class="page" id="page-appointments"></section><section class="page" id="page-laboratory"></section><section class="page" id="page-pharmacy"></section><section class="page" id="page-records"></section><section class="page" id="page-audit"></section><section class="page" id="page-reports"></section><section class="page" id="page-settings"></section>
+    </main>
+  </div>
+
+  <div class="toast" id="toast" role="status">Dr. Arjun Kumar: verification timed out. Automatic mitigation completed.</div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+<div id="criticalAlert" class="critical-alert" aria-hidden="false" style="display: flex;">
+  <div class="critical-alert-card">
+    <button id="criticalAlertClose" class="critical-alert-x" type="button" aria-label="Dismiss alert" fdprocessedid="mb4cy9" disabled="">×</button>
+    <strong>CRITICAL SECURITY ALERT</strong>
+    <h2 id="criticalAlertTitle">Preserving administrator evidence</h2>
+    <div id="criticalAlertDetails" class="critical-alert-details"><div><span>Action</span><strong>Ignored Critical alert three times</strong></div><div><span>Related incident</span><strong>INC-00103</strong></div><div><span>Status</span><strong>Capturing screenshot and session recording…</strong></div></div>
+    <div class="critical-alert-actions"><button id="criticalAlertEvidence" class="button" type="button" fdprocessedid="288ns" disabled="">View Evidence</button></div>
+  </div>
+</div>
+  
+
+
+<span id="PING_CONTENT_PUSH_NOTIFICATION" style="display: none;"></span><span id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span><div id="singleExportPopup" class="single-export-popup" hidden=""><div class="single-export-card"><button type="button" class="single-export-close" aria-label="Close" fdprocessedid="ay701">×</button><strong>PATIENT DATA EXPORT</strong><div id="singleExportPopupDetails"><div><span>Doctor</span><strong>Dr. Arjun Kumar</strong></div><div><span>Patient / File</span><strong>Yasiv M. Patel</strong></div><div><span>Data</span><strong>CT Brain</strong></div><div><span>Reason</span><strong>Approved Medical Research</strong></div><div><span>Date / Time</span><strong>18/8/2026, 7:47:32 pm</strong></div><div><span>Result</span><strong>Allowed</strong></div></div><div id="singleExportExpanded" class="single-export-expanded" hidden=""></div><div class="single-export-actions"><button type="button" id="singleExportView" fdprocessedid="esldd4">View</button><button type="button" id="singleExportAck" fdprocessedid="rk2hid">Acknowledge</button></div></div></div></body></html>

@@ -1,0 +1,36 @@
+{
+  "incidentCode": "ADM-1787062710620",
+  "readOnly": true,
+  "evidenceStatus": "Complete",
+  "hasScreenshot": true,
+  "hasRecording": false,
+  "hasReplay": true,
+  "files": [
+    {
+      "name": "screenshot.png",
+      "sha256": "0d86ee2a71c405929896304833f5f9e67ebc25a55ac2c29c9f6258f8e4371d46",
+      "bytes": 193832
+    },
+    {
+      "name": "page-snapshot.html",
+      "sha256": "3b82e0587f24db931141249ab1c1b4d84582775c895fb0c302b830e5f3e6f9d4",
+      "bytes": 18836
+    },
+    {
+      "name": "replay.json",
+      "sha256": "2789f07669473049aa74e10141d0e55021e7822ca84b9d2b1765c83532b9e6e1",
+      "bytes": 2774767
+    },
+    {
+      "name": "timeline.json",
+      "sha256": "648157620a71c7c55aaac9de72c63e5197418ae340eaf03516b7bdc24a5dbf0e",
+      "bytes": 10575
+    },
+    {
+      "name": "incident.json",
+      "sha256": "a65d59f92ca56ee4bd3fd6ac802a555b54b9c0f7439c694e321f358233468faa",
+      "bytes": 819
+    }
+  ],
+  "createdAt": "2026-08-18T14:18:31.229Z"
+}

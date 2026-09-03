@@ -1,0 +1,33 @@
+{
+  "incidentCode": "INC-00103",
+  "user": {
+    "id": 2,
+    "username": "doctor",
+    "fullName": "Dr. Arjun Kumar",
+    "role": "doctor",
+    "doctorId": "DOC001",
+    "department": "Cardiology"
+  },
+  "incident": {
+    "incidentId": 103,
+    "userId": 2,
+    "username": "doctor",
+    "fullName": "Dr. Arjun Kumar",
+    "doctorId": "DOC001",
+    "doctor": "Dr. Arjun Kumar",
+    "department": "Cardiology",
+    "role": "doctor",
+    "actionType": "BULK_EXPORT_ATTEMPT",
+    "actionLabel": "Bulk patient data export",
+    "requestedCount": 6000,
+    "risk": "Critical",
+    "riskLevel": "Critical",
+    "totalRiskScore": 100,
+    "result": "Blocked",
+    "reason": "Bulk export of all patient records; Access volume far above personal baseline; Cross-department data request; Potential data exfiltration",
+    "time": "2026-08-18T14:17:51.159Z",
+    "timestamp": "2026-08-18T14:17:51.159Z",
+    "requiresEvidence": true
+  },
+  "createdAt": "2026-08-18T14:17:51.807Z"
+}
