@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WeCare | Doctor Dashboard</title>
+  <link rel="stylesheet" href="/css/common.css" />
+  <link rel="stylesheet" href="/css/doctor.css" />
+  <link rel="stylesheet" href="/css/phase15.css" />
+</head>
+<body class="doctor-body">
+  <header class="hero-header">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="brand-copy">
+        <p class="brand-name">WeCare</p>
+        <div class="doctor-identity">
+          <div>
+            <h1 id="doctorGreeting">Hello, Dr. Arjuna</h1>
+            <p id="doctorPosition">Senior Consultant Physician</p>
+            <p id="doctorDepartment">Internal Medicine</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-actions">
+        <div class="date-card"><strong id="currentDate">Loading...</strong><span id="currentTime"></span></div>
+        <button class="hero-button" id="notificationButton" type="button">Security Inbox <span class="badge" id="securityMessageBadge">0</span></button>
+        <button class="hero-button" id="logoutButton" type="button">Logout</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="workspace">
+    <aside class="sidebar" aria-label="Doctor dashboard navigation">
+      <button class="nav-link active" data-view="schedule">My Schedule</button>
+      <button class="nav-link" data-view="reports">Patient Reports</button>
+      <button class="nav-link" data-view="labs">Laboratory Reports</button>
+      <button class="nav-link" data-view="scans">Scan Reports</button>
+      <button class="nav-link" data-view="records">Medical Records</button>
+      <button class="nav-link" id="securityCenterButton" type="button">Security</button>
+    </aside>
+
+    <section class="content-area">
+<div id="sectionHost"></div>
+    </section>
+  </main>
+
+  <div id="recordModal" class="modal" aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-header">
+        <div><p class="eyebrow" id="modalEyebrow">Record details</p><h2 id="modalTitle">Details</h2></div>
+        <button id="closeModal" class="close-button" aria-label="Close">×</button>
+      </div>
+      <form id="recordForm">
+        <div id="modalFields" class="form-grid"></div>
+        <div class="modal-actions">
+          <button type="button" id="printRecord" class="secondary-action">Print</button>
+          <button type="button" id="cancelModal" class="secondary-action">Close</button>
+          <button type="submit" id="saveRecord" class="primary-action">Save Changes</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="reportViewer" class="modal report-modal" aria-hidden="true">
+    <div class="report-viewer-card" role="dialog" aria-modal="true" aria-labelledby="reportViewerTitle">
+      <div class="modal-header">
+        <div><p class="eyebrow">Confidential medical document</p><h2 id="reportViewerTitle">Report</h2></div>
+        <button id="closeReportViewer" class="close-button" aria-label="Close">×</button>
+      </div>
+      <div class="report-toolbar">
+        <label class="upload-button">Upload / Replace<input id="reportUpload" type="file" accept="image/*,.pdf" hidden></label>
+        <button id="printReport" class="primary-action" type="button">Print Report</button>
+      </div>
+      <div id="reportMeta" class="report-meta"></div>
+      <div class="report-stage"><img id="reportImage" alt="Medical report preview" /></div>
+    </div>
+  </div>
+
+
+  <div id="securityNoticeModal" class="security-notice-modal" aria-hidden="true">
+    <div class="security-notice-card" role="dialog" aria-modal="true" aria-labelledby="securityNoticeTitle">
+      <div class="security-notice-strip" id="securityNoticeStrip"></div>
+      <div class="security-notice-header">
+        <div class="security-notice-icon" id="securityNoticeIcon">!</div>
+        <div>
+          <p class="security-notice-kicker" id="securityNoticeKicker">Hospital notification</p>
+          <h2 id="securityNoticeTitle">Security Notice</h2>
+        </div>
+        <button id="securityNoticeClose" class="security-notice-close" type="button" aria-label="Close">×</button>
+      </div>
+      <div class="security-notice-body">
+        <p id="securityNoticeMessage"></p>
+        <div class="security-notice-meta" id="securityNoticeMeta"></div>
+      </div>
+      <div class="security-notice-actions" id="securityNoticeActions">
+        <button id="securityNoticePrimary" class="primary-action" type="button">Acknowledge</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="/vendor/html2canvas/html2canvas.min.js"></script>
+  <script src="/vendor/rrweb/rrweb.umd.min.cjs"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/evidence-capture.js"></script>
+  <script src="/js/doctor-dashboard.js"></script>
+  <script src="/js/phase8-doctor.js"></script>
+</body>
+</html>

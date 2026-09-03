@@ -1,0 +1,202 @@
+/* common.css
+   Shared resets, design tokens, and base components used by every page. */
+
+:root {
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 48px;
+
+  --radius: 12px;
+  --radius-sm: 8px;
+
+  --font-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+  --admin-bg: #060b14;
+  --admin-surface: #0f1a2b;
+  --admin-border: #1d3050;
+  --admin-accent: #22d3ee;
+  --admin-accent-dim: #0e7490;
+  --admin-text: #e2e8f0;
+  --admin-muted: #7d93b4;
+
+  --doctor-bg: #f4f8ff;
+  --doctor-surface: #ffffff;
+  --doctor-border: #dbe4f5;
+  --doctor-accent: #2563eb;
+  --doctor-accent-dim: #1d4ed8;
+  --doctor-text: #0f172a;
+  --doctor-muted: #64748b;
+
+  --ok: #16a34a;
+  --warn: #d97706;
+  --err: #dc2626;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body { height: 100%; }
+
+body {
+  font-family: var(--font-base);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---------- Landing page ---------- */
+.landing-body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(circle at 50% 0%, #0f1a2b 0%, #060b14 70%);
+  color: var(--admin-text);
+  padding: var(--space-3);
+}
+
+.landing-card {
+  text-align: center;
+  background: var(--admin-surface);
+  border: 1px solid var(--admin-border);
+  border-radius: var(--radius);
+  padding: var(--space-5) var(--space-4);
+  max-width: 520px;
+  width: 100%;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+}
+
+.landing-card h1 { font-size: 28px; letter-spacing: 0.5px; }
+.landing-card .subtitle { color: var(--admin-muted); margin-top: var(--space-1); }
+.landing-card .phase-tag {
+  display: inline-block;
+  margin-top: var(--space-2);
+  padding: 4px 12px;
+  border: 1px solid var(--admin-accent-dim);
+  border-radius: 999px;
+  color: var(--admin-accent);
+  font-size: 13px;
+}
+
+.shield-badge {
+  font-size: 48px;
+  margin-bottom: var(--space-2);
+  color: var(--admin-accent);
+  text-shadow: 0 0 24px rgba(34, 211, 238, 0.5);
+}
+
+.landing-actions {
+  margin-top: var(--space-4);
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* ---------- Auth (login) cards ---------- */
+.auth-card {
+  max-width: 420px;
+  width: 100%;
+  margin: var(--space-5) auto;
+  padding: var(--space-4);
+  border-radius: var(--radius);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+}
+
+.auth-card h1 { font-size: 26px; }
+.auth-subtitle { margin-top: var(--space-1); font-size: 14px; }
+
+.field { display: block; margin-top: var(--space-2); }
+.field-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.field input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  font-size: 15px;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.field input:focus { outline: none; }
+
+.error-message {
+  margin-top: var(--space-2);
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.08s ease, background 0.15s ease, box-shadow 0.15s ease;
+}
+.btn:active { transform: translateY(1px); }
+.btn-block { width: 100%; margin-top: var(--space-3); }
+.btn-sm { padding: 8px 14px; font-size: 14px; }
+
+.btn-admin {
+  background: linear-gradient(135deg, var(--admin-accent-dim), var(--admin-accent));
+  color: #060b14;
+}
+.btn-admin:hover { box-shadow: 0 0 18px rgba(34, 211, 238, 0.45); }
+
+.btn-doctor {
+  background: linear-gradient(135deg, var(--doctor-accent), var(--doctor-accent-dim));
+  color: #fff;
+}
+.btn-doctor:hover { box-shadow: 0 6px 18px rgba(37, 99, 235, 0.35); }
+
+.btn-outline {
+  background: transparent;
+  border-color: currentColor;
+  color: inherit;
+}
+.btn-outline:hover { background: rgba(255, 255, 255, 0.08); }
+
+/* ---------- Top bar (dashboards) ---------- */
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-2) var(--space-3);
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+.topbar-left { display: flex; align-items: center; gap: var(--space-2); }
+.topbar-right { display: flex; align-items: center; gap: var(--space-2); }
+.topbar-title { font-size: 20px; }
+.topbar-sub { font-size: 13px; opacity: 0.8; }
+.shield-mini, .cross-mini { font-size: 28px; }
+
+.dashboard {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: var(--space-3);
+}
+
+/* ---------- Status pills ---------- */
+.status-pending { color: var(--warn); }
+.status-warn { color: var(--warn); }
+.status-ok { color: var(--ok); }
+.status-err { color: var(--err); }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 600px) {
+  .topbar-title { font-size: 18px; }
+  .auth-card { margin: var(--space-3) var(--space-2); }
+}
+
+/* Medical center branding */
+.hospital-name{margin-top:7px;color:#fff;font-size:14px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}

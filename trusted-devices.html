@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trusted Devices &middot; Health Threat Detection</title>
+  <link rel="stylesheet" href="/css/common.css" />
+  <link rel="stylesheet" href="/css/admin.css" />
+</head>
+<body class="admin-body">
+  <header class="topbar admin-topbar">
+    <div class="topbar-left">
+      <span class="shield-mini" aria-hidden="true">&#128737;</span>
+      <div>
+        <h1 class="topbar-title">Health Threat Detection</h1>
+        <p class="topbar-sub">Trusted Devices Management</p>
+      </div>
+    </div>
+    <div class="topbar-right">
+      <a href="/admin-dashboard.html" class="btn btn-outline btn-sm">Back to Dashboard</a>
+      <button id="logoutButton" class="btn btn-outline btn-sm">Logout</button>
+    </div>
+  </header>
+
+  <main class="dashboard">
+    <section class="sessions-panel">
+      <h2>Trusted Devices</h2>
+      <div style="overflow-x: auto;">
+        <table class="sessions-table">
+          <thead>
+            <tr>
+              <th>Doctor</th>
+              <th>Device</th>
+              <th>Browser</th>
+              <th>OS</th>
+              <th>First Seen</th>
+              <th>Last Seen</th>
+              <th>Trusted</th>
+              <th>Blocked</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="devicesTableBody">
+            <tr><td colspan="9" style="color: var(--admin-muted); text-align: center; padding: 16px;">Loading devices&hellip;</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/trusted-devices.js"></script>
+</body>
+</html>

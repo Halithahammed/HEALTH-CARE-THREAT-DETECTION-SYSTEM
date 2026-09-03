@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WeCare | Administration & SOC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/admin.css" />
+  <link rel="stylesheet" href="/css/phase15.css" />
+</head>
+<body>
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <div class="brand-name">WeCare</div>
+      <div class="brand-subtitle">WeCare</div>
+    </div>
+    <nav class="nav" aria-label="Administration modules">
+      <button class="nav-item active" data-page="overview">Dashboard</button>
+      <button class="nav-item" data-page="doctors">Doctors</button>
+      <button class="nav-item" data-page="patients">Patients</button>
+      <button class="nav-item" data-page="reception">Reception</button>
+      <button class="nav-item" data-page="appointments">Appointments</button>
+      <button class="nav-item" data-page="laboratory">Laboratory</button>
+      <button class="nav-item" data-page="pharmacy">Pharmacy</button>
+      <button class="nav-item" data-page="records">Medical Records</button>
+      <div class="nav-label">Security operations</div>
+      <button class="nav-item" data-page="soc">AI Security Operations Center</button>
+      <button class="nav-item" data-page="threats">Threat Monitoring</button>
+      <button class="nav-item" data-page="communication">Security Notices</button>
+      <button class="nav-item" data-page="export-requests">Export Requests</button>
+      <button class="nav-item" data-page="reports">Reports</button>
+      <button class="nav-item" data-page="settings">Settings</button>
+    </nav>
+    <div class="sidebar-footer">
+      <div class="sidebar-user">Rajesh Kumar</div>
+      <div class="sidebar-role">Hospital Administrator</div>
+      <button id="logoutButton" class="logout-btn">Logout</button>
+    </div>
+  </aside>
+
+  <div class="app-shell">
+    <header class="topbar">
+      <div>
+        <button class="menu-button" id="menuButton" aria-label="Open navigation">Menu</button>
+        <div class="eyebrow">WeCare · Autonomous Insider Threat Hunter</div>
+        <h1 id="pageTitle">Administration Dashboard</h1>
+      </div>
+      <div class="topbar-meta">
+        <div><span class="meta-label">System status</span><strong class="status-normal">Operational</strong></div>
+        <div><span class="meta-label">Last updated</span><strong id="currentTime">--</strong></div>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="page active" id="page-overview">
+        <div class="intro-row">
+          <div><h2>Hospital overview</h2><p>Operational and security activity across the medical center.</p></div>
+          <div class="actions"><button class="button secondary" data-action="export">Export</button><button class="button" data-action="report">Generate report</button></div>
+        </div>
+
+        <div class="metric-grid">
+          <article class="metric-card"><div class="metric-label">Active doctors</div><div class="metric-value">54</div><div class="metric-note">48 currently available</div></article>
+          <article class="metric-card"><div class="metric-label">Registered patients</div><div class="metric-value">1,842</div><div class="metric-note">31 admitted today</div></article>
+          <article class="metric-card"><div class="metric-label">Appointments today</div><div class="metric-value">127</div><div class="metric-note">91 completed</div></article>
+          <article class="metric-card"><div class="metric-label">Pending reports</div><div class="metric-value">18</div><div class="metric-note">6 marked urgent</div></article>
+          <article class="metric-card"><div class="metric-label">Cases under review</div><div class="metric-value" id="verificationMetric">2</div><div class="metric-note">Administrator-controlled workflow</div></article>
+          <article class="metric-card"><div class="metric-label">Open incidents</div><div class="metric-value">3</div><div class="metric-note">1 requires review</div></article>
+        </div>
+
+        <div class="dashboard-grid" style="grid-template-columns:1fr">
+          <article class="panel span-2">
+            <div class="panel-heading"><div><h3>Security Risk Spider Profile</h3><p>Current clinical-access risk across key behavioral dimensions.</p></div></div>
+            <div class="scatter-wrap dashboard-scatter"><canvas id="dashboardRiskSpider" height="300" aria-label="Security risk spider graph"></canvas></div>
+          </article>
+        </div>
+
+        <article class="panel">
+          <div class="panel-heading"><div><h3>Recent security decisions</h3><p>ML classification, administrator investigation, and automatic containment.</p></div><button class="text-button" data-go="verification">View verification queue</button></div>
+          <div class="table-wrap"><table><thead><tr><th>User</th><th>Department</th><th>Detection</th><th>Risk</th><th>Confidence</th><th>Decision</th><th>Status</th></tr></thead><tbody id="overviewSecurityRows"></tbody></table></div>
+        </article>
+      </section>
+
+      <section class="page" id="page-soc"></section>
+
+      <section class="page" id="page-verification">
+        <div class="intro-row"><div><h2>Verification queue</h2><p>Administrator-only investigation queue. Suspected insiders cannot approve their own activity.</p></div><button class="button" id="startDemo">Create demo request</button></div>
+        <div class="notice"><strong>Live security:</strong> suspicious activity is logged and delivered immediately to the administrator and doctor.</div>
+        <article class="panel"><div class="table-wrap"><table><thead><tr><th>Doctor</th><th>Device</th><th>Location</th><th>Risk</th><th>Time remaining</th><th>Verification status</th><th>System action</th></tr></thead><tbody id="verificationRows"></tbody></table></div></article>
+      </section>
+
+      <section class="page" id="page-threats">
+        <div class="intro-row"><div><h2>Threat monitoring</h2><p>Review suspicious behavior and the factors contributing to each classification.</p></div><div class="actions"><button class="button secondary">Filter</button><button class="button">Export incidents</button></div></div>
+        <div class="threat-layout">
+          <article class="panel"><div class="panel-heading"><div><h3>Attack profile</h3><p>Selected event: unusual access by Dr. Arjuna.</p></div></div><canvas id="radarChart" height="330"></canvas></article>
+          <article class="panel"><h3>Selected event</h3><dl class="detail-list"><div><dt>Classification</dt><dd>Suspicious account access</dd></div><div><dt>Confidence</dt><dd>94%</dd></div><div><dt>Source</dt><dd>New Windows device</dd></div><div><dt>Location</dt><dd>Coimbatore, Tamil Nadu</dd></div><div><dt>Detected</dt><dd>10:21 AM</dd></div><div><dt>Current action</dt><dd>Administrator investigation pending</dd></div></dl><button class="button full" data-go="verification">Open verification request</button></article>
+        </div>
+        <article class="panel"><div class="table-wrap"><table><thead><tr><th>Time</th><th>User</th><th>Attack variant</th><th>Primary signal</th><th>Risk</th><th>Response</th></tr></thead><tbody><tr><td>10:21 AM</td><td>Dr. Arjuna</td><td>Suspicious account access</td><td>New device and unusual location</td><td><span class="badge high">High</span></td><td>Investigation opened</td></tr><tr><td>09:48 AM</td><td>Dr. Priya</td><td>Impossible travel</td><td>Two distant logins within 18 minutes</td><td><span class="badge critical">Critical</span></td><td>Session blocked</td></tr><tr><td>08:32 AM</td><td>Dr. Rahul</td><td>Credential anomaly</td><td>Repeated failed authentication</td><td><span class="badge medium">Medium</span></td><td>Administrator review</td></tr></tbody></table></div></article>
+      </section>
+
+      <section class="page" id="page-predictions">
+        <div class="intro-row"><div><h2>ML prediction</h2><p>Explainable risk classifications produced from login and behavior signals.</p></div><button class="button">Run demonstration</button></div>
+        <div class="metric-grid four"><article class="metric-card"><div class="metric-label">Predictions today</div><div class="metric-value">169</div></article><article class="metric-card"><div class="metric-label">High confidence</div><div class="metric-value">93%</div></article><article class="metric-card"><div class="metric-label">Escalated</div><div class="metric-value">8</div></article><article class="metric-card"><div class="metric-label">Automatically resolved</div><div class="metric-value">6</div></article></div>
+        <article class="panel"><div class="table-wrap"><table><thead><tr><th>User</th><th>Prediction</th><th>Confidence</th><th>Contributing factors</th><th>Response</th></tr></thead><tbody><tr><td>Dr. Arjuna</td><td>Suspicious login</td><td>94%</td><td>New device, unusual location, after-hours pattern</td><td>Administrator review</td></tr><tr><td>Dr. Priya</td><td>Impossible travel</td><td>98%</td><td>Location velocity, concurrent session</td><td>Immediate block</td></tr><tr><td>Dr. Rahul</td><td>Credential anomaly</td><td>86%</td><td>Failed logins, unfamiliar browser</td><td>Administrator review</td></tr><tr><td>Dr. Meena</td><td>Normal behavior</td><td>99%</td><td>Trusted device, expected time and location</td><td>Allow</td></tr></tbody></table></div></article>
+      </section>
+
+      <section class="page" id="page-mitigation">
+        <div class="intro-row"><div><h2>Security actions</h2><p>Live alerts and audit actions for suspicious activity.</p></div></div>
+        <article class="panel"><div class="panel-heading"><div><h3>Mitigation history</h3><p>Recorded security actions.</p></div></div><div class="table-wrap"><table><thead><tr><th>Time</th><th>User</th><th>Trigger</th><th>Automatic action</th><th>Outcome</th></tr></thead><tbody id="mitigationRows"></tbody></table></div></article>
+      </section>
+
+      <section class="page" id="page-communication"></section><section class="page" id="page-export-requests"></section><section class="page" id="page-doctors"></section><section class="page" id="page-patients"></section><section class="page" id="page-reception"></section><section class="page" id="page-appointments"></section><section class="page" id="page-laboratory"></section><section class="page" id="page-pharmacy"></section><section class="page" id="page-records"></section><section class="page" id="page-audit"></section><section class="page" id="page-reports"></section><section class="page" id="page-settings"></section>
+    </main>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="/vendor/html2canvas/html2canvas.min.js"></script>
+  <script src="/vendor/rrweb/rrweb.umd.min.cjs"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/evidence-capture.js"></script>
+  <script src="/js/admin-dashboard.js"></script>
+  <script src="/js/phase8-admin.js"></script>
+  <script src="/js/phase9-admin.js"></script>
+  <script src="/js/phase10-admin.js"></script>
+  <script src="/js/phase15-admin.js"></script>
+  <script src="/js/admin-cleanup-v3.js"></script>
+<div id="criticalAlert" class="critical-alert" hidden aria-hidden="true">
+  <div class="critical-alert-card">
+    <button id="criticalAlertClose" class="critical-alert-x" type="button" aria-label="Dismiss alert">×</button>
+    <strong>CRITICAL SECURITY ALERT</strong>
+    <h2 id="criticalAlertTitle">Security action blocked</h2>
+    <div id="criticalAlertDetails" class="critical-alert-details"></div>
+    <div class="critical-alert-actions"><button id="criticalAlertEvidence" class="button" type="button">View Evidence</button></div>
+  </div>
+</div>
+  <script src="/js/critical-alert.js"></script>
+</body>
+</html>

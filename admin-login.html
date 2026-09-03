@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Login &middot; Health Threat Detection</title>
+  <link rel="stylesheet" href="/css/common.css" />
+  <link rel="stylesheet" href="/css/admin.css" />
+</head>
+<body class="admin-body">
+  <main class="auth-card admin-card">
+    <div class="shield-icon" aria-hidden="true">&#128737;</div>
+    <h1>Admin Portal</h1>
+    <p class="auth-subtitle">Health Threat Detection &mdash; Security Console</p>
+
+    <form id="adminLoginForm" novalidate>
+      <label class="field">
+        <span class="field-label">Username</span>
+        <input type="text" id="username" name="username" autocomplete="username" required />
+      </label>
+
+      <label class="field">
+        <span class="field-label">Password</span>
+        <input type="password" id="password" name="password" autocomplete="current-password" required />
+      </label>
+
+      <div id="errorMessage" class="error-message" role="alert" hidden></div>
+
+      <button type="submit" class="btn btn-admin btn-block" id="loginButton">Sign In as Administrator</button>
+    </form>
+  </main>
+
+  <script src="/js/admin-login.js"></script>
+</body>
+</html>

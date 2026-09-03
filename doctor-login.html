@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Doctor Login &middot; Health Threat Detection</title>
+  <link rel="stylesheet" href="/css/common.css" />
+  <link rel="stylesheet" href="/css/doctor.css" />
+</head>
+<body class="doctor-body">
+  <main class="auth-card doctor-card">
+    <div class="cross-icon" aria-hidden="true">&#10010;</div>
+    <h1>Doctor Portal</h1>
+    <p class="auth-subtitle">Health Threat Detection &mdash; Clinician Access</p>
+
+    <form id="doctorLoginForm" novalidate>
+      <label class="field">
+        <span class="field-label">Username</span>
+        <input type="text" id="username" name="username" autocomplete="username" required />
+      </label>
+
+      <label class="field">
+        <span class="field-label">Password</span>
+        <input type="password" id="password" name="password" autocomplete="current-password" required />
+      </label>
+
+      <div id="errorMessage" class="error-message" role="alert" hidden></div>
+
+      <button type="submit" class="btn btn-doctor btn-block" id="loginButton">Sign In as Doctor</button>
+    </form>
+  </main>
+
+  <script src="/js/doctor-login.js"></script>
+</body>
+</html>
